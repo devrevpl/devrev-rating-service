@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: moviesDb
+      uri: mongodb://localhost:27017/moviesDb
+
+moviesdb:
+  populatebyinitdata: true
+
+
