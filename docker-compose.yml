@@ -16,6 +16,7 @@ services:
     networks:
       - default
   movies-app:
+    image: devrev-movies:1.0.0
     depends_on:
       - mongo-db
     container_name: "movies-app"
@@ -24,7 +25,6 @@ services:
       - MOVIESDB_POPULATEBYINITDATA=true
     links:
       - mongo-db:mongo
-    build: .
     ports:
       - "8080:8080"
     networks:

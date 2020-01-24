@@ -13,4 +13,5 @@ docker rm mongo-db
 echo "Removed mongo-db container"
 docker rm movies-app
 echo "Removed movies-app container"
-
+docker image rm devrev-movies:1.0.0
+echo "Removed movies-app container"
